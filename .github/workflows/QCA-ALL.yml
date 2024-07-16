@@ -28,7 +28,7 @@ jobs:
     name: ${{matrix.TARGET}}
     strategy:
       fail-fast: false
-      #max-parallel: 3
+      max-parallel: 2
       matrix:
         TARGET: [QCA-WIFI-YES, QCA-WIFI-NO]
         SOURCE: [VIKINGYFY/immortalwrt]

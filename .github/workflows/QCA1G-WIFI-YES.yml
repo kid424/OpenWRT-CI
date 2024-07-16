@@ -28,10 +28,11 @@ jobs:
     name: ${{matrix.TARGET}}
     strategy:
       fail-fast: false
-      max-parallel: 3
+      #max-parallel: 3
       matrix:
         TARGET: [QCA1G-WIFI-YES]
-        SOURCE: [VIKINGYFY/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
+        SOURCE: [VIKINGYFY/immortalwrt]
+        #, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
