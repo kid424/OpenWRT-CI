@@ -1,5 +1,5 @@
 #CI项目
-name: QCA1G-ALL
+name: QCA1G-WIFI-NO
 
 #CI计划
 on:
@@ -30,7 +30,7 @@ jobs:
       fail-fast: false
       max-parallel: 3
       matrix:
-        TARGET: [QCA1G-WIFI-NO, QCA1G-WIFI-YES]
+        TARGET: [QCA1G-WIFI-NO]
         SOURCE: [VIKINGYFY/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
 
     #调用公用编译核心WRT-CORE.yml
