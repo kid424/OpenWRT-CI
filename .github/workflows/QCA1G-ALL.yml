@@ -30,7 +30,7 @@ jobs:
       fail-fast: false
       max-parallel: 2
       matrix:
-        TARGET: [QCA1G-WIFI-YES, QCA1G-WIFI-NO]
+        TARGET: [QCA-1G-WIFI-YES, QCA-1G-WIFI-NO]
         SOURCE: [VIKINGYFY/immortalwrt]
         #, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
 
