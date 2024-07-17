@@ -31,8 +31,8 @@ jobs:
       max-parallel: 2
       matrix:
         TARGET: [QCA-1G-WIFI-YES, QCA-1G-WIFI-NO]
-        SOURCE: [VIKINGYFY/immortalwrt]
-        #, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
+        SOURCE: [King-Of-Knights/openwrt-6.x]
+        #[VIKINGYFY/immortalwr, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
