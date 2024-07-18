@@ -80,3 +80,7 @@ UPDATE_VERSION() {
 
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 #UPDATE_VERSION "sing-box" "true"
+
+# fix ruby-3.3.3 build failure
+rm -rf feeds/packages/ruby
+mv $GITHUB_WORKSPACE/ExtraPackages/ruby feeds/packages/ruby 
