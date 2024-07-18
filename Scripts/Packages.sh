@@ -32,6 +32,7 @@ UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master"
 #UPDATE_PACKAGE "advancedplus" "VIKINGYFY/luci-app-advancedplus" "main"
 #UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
+UPDATE_PACKAGE "luci-app-xupnpd" "jarod360/luci-app-xupnpd" "main"
 
 #if [[ $WRT_REPO != *"lede"* ]]; then
 #	UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
