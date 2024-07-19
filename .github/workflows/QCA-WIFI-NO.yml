@@ -1,5 +1,5 @@
 #CI项目
-name: QCA1G-NOImm-WIFI-NO
+name: QCA-WIFI-NO
 
 #CI计划
 on:
@@ -28,10 +28,10 @@ jobs:
     name: ${{matrix.TARGET}}
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 3
       matrix:
-        TARGET: [QCA-1G-WIFI-NO]
-        SOURCE: [King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
+        TARGET: [QCA-WIFI-NO]
+        SOURCE: [VIKINGYFY/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
         #[VIKINGYFY/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
 
     #调用公用编译核心WRT-CORE.yml
