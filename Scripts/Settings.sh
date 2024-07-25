@@ -37,11 +37,7 @@ if [ -n "$WRT_PACKAGE" ]; then
 fi
 
 #高通平台锁定512M内存
-if [[ $WRT_TARGET == *"QCA-1G-"* ]]; then
-	echo "CONFIG_ATH11K_MEM_PROFILE_1G=y" >> ./.config
-        echo "CONFIG_ATH11K_MEM_PROFILE_512M=n" >> ./.config
-        echo "CONFIG_ATH11K_MEM_PROFILE_256M=n" >> ./.config
-elif [[ $WRT_TARGET == *"QCA-"* ]]; then
+if [[ $WRT_TARGET == *"IPQ"* ]]; then
 	echo "CONFIG_ATH11K_MEM_PROFILE_1G=n" >> ./.config
 	echo "CONFIG_ATH11K_MEM_PROFILE_512M=y" >> ./.config
 	echo "CONFIG_ATH11K_MEM_PROFILE_256M=n" >> ./.config
@@ -49,9 +45,9 @@ fi
 
 #科学插件设置
 if [[ $WRT_REPO == *"lede"* ]]; then
-	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config
-	echo "CONFIG_PACKAGE_luci-app-passwall=y" >> ./.config
-	echo "CONFIG_PACKAGE_luci-app-ssr-plus=y" >> ./.config
+	#echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config
+	#echo "CONFIG_PACKAGE_luci-app-passwall=y" >> ./.config
+	#echo "CONFIG_PACKAGE_luci-app-ssr-plus=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-turboacc=y" >> ./.config
 else
 	echo "CONFIG_PACKAGE_luci=y" >> ./.config
