@@ -84,5 +84,5 @@ UPDATE_VERSION() {
 #UPDATE_VERSION "sing-box" "true"
 
 # fix ruby-3.3.3 build failure
-rm -rf feeds/packages/ruby
-mv $GITHUB_WORKSPACE/ExtraPackages/ruby feeds/packages/ruby 
+#rm -rf feeds/packages/ruby
+#mv $GITHUB_WORKSPACE/ExtraPackages/ruby feeds/packages/ruby 
