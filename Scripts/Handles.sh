@@ -35,13 +35,19 @@ if [ -d *"openclash"* ]; then
 
 	GEO_MMDB="https://github.com/alecthw/mmdb_china_ip_list/raw/release/lite/Country.mmdb"
 	GEO_SITE="https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geosite.dat"
-	GEO_IP="https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat"
+	#GEO_IP="https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat"
+	CHINA_WHITE_LIST="https://github.com/felixonmars/dnsmasq-china-list/raw/master/accelerated-domains.china.conf"
+	CN_IPSET="https://ispip.clang.cn/all_cn.txt"
+	CN_IP6SET="https://ispip.clang.cn/all_cn_ipv6.txt"
 
 	cd ./luci-app-openclash/root/etc/openclash/
 
 	curl -sL -o Country.mmdb $GEO_MMDB && echo "Country.mmdb done!"
 	curl -sL -o GeoSite.dat $GEO_SITE && echo "GeoSite.dat done!"
-	curl -sL -o GeoIP.dat $GEO_IP && echo "GeoIP.dat done!"
+	#curl -sL -o GeoIP.dat $GEO_IP && echo "GeoIP.dat done!"
+	curl -sL -o accelerated-domains.china.conf $CHINA_WHITE_LIST && echo "accelerated-domains.china.conf done"
+	curl -sL -o china_ip_route.ipset $CN_IPSET && echo "cn ipv4 done"
+	curl -sL -o china_ip6_route.ipset $CN_IP6SET && echo "cn ipv6 done"
 
 	mkdir ./core/ && cd ./core/
 
