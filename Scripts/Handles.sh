@@ -42,6 +42,9 @@ if [ -d *"openclash"* ]; then
 
 	cd ./luci-app-openclash/root/etc/openclash/
 
+	rm -rf game_rules/*
+	rm -rf rule_provider/*
+
 	curl -sL -o Country.mmdb $GEO_MMDB && echo "Country.mmdb done!"
 	curl -sL -o GeoSite.dat $GEO_SITE && echo "GeoSite.dat done!"
 	#curl -sL -o GeoIP.dat $GEO_IP && echo "GeoIP.dat done!"
