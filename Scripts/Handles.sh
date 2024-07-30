@@ -20,7 +20,7 @@ if [ -d *"homeproxy"* ]; then
 
 	cd .. && rm -rf ./$HP_RULES/
 
-	cd $PKG_PATCH && echo "homeproxy date has been updated!"
+	cd $PKG_PATCH && echo "homeproxy data has been updated!"
 fi
 
 #预置OpenClash内核和数据
@@ -60,7 +60,7 @@ if [ -d *"openclash"* ]; then
 
 	chmod +x ./* && rm -rf ./*.gz
 
-	cd $PKG_PATCH && echo "openclash date has been updated!"
+	cd $PKG_PATCH && echo "openclash data has been updated!"
 fi
 
 #移除Shadowsocks组件
