@@ -26,7 +26,7 @@ UPDATE_PACKAGE() {
 #UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "$([[ $WRT_REPO == *"lede"* ]] && echo "main" || echo "js")"
 
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
-#UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main"
+UPDATE_PACKAGE "passwall2" "xiaorouji/openwrt-passwall2" "main"
 UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master"
 
 #UPDATE_PACKAGE "advancedplus" "VIKINGYFY/luci-app-advancedplus" "main"
@@ -82,7 +82,3 @@ UPDATE_VERSION() {
 
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 #UPDATE_VERSION "sing-box" "true"
-
-# fix ruby-3.3.3 build failure
-#rm -rf feeds/packages/ruby
-#mv $GITHUB_WORKSPACE/ExtraPackages/ruby feeds/packages/ruby 
