@@ -40,6 +40,8 @@ UPDATE_PACKAGE "luci-app-wolplus" "animegasan/luci-app-wolplus" "main"
 #	UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "master"
 #	UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 #	UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main" "pkg"
+#	UPDATE_PACKAGE "alpha" "derisamedia/luci-theme-alpha" "master"
+#        UPDATE_PACKAGE "alpha-config" "animegasan/luci-app-alpha-config" "master"
 #fi
 
 if [[ $WRT_REPO == *"openwrt-6.x"* ]]; then
